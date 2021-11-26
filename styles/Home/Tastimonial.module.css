@@ -1,0 +1,247 @@
+.section_main {
+  padding-top: 110px;
+  padding-bottom: 69px;
+  background-color: #fff;
+}
+
+.wrapper {
+  padding: 0 24px 0;
+  position: relative;
+}
+.wrapper::after {
+  content: "";
+    display: block;
+    padding-bottom: 48px;
+    border-bottom: 1px solid #e2defc;
+}
+ .text_section {
+   padding: 0px
+}
+
+
+.title {
+  font-size: 24px;
+  line-height: 32px;
+  color: #2b1b9a;
+  font-family: Asap, sans-serif;
+  margin-bottom: 0;
+}
+.read_more {
+  position: relative;
+  padding-top: 24px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 1.26316px;
+  text-transform: uppercase;
+  color: #2b1b9a;
+  font-family: Livvic, sans-serif;
+  padding-bottom: 7px;
+}
+.read_more::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, #a0d8f7 0, #e2deff 100%);
+  transition: opacity 0.3s;
+  opacity: 0.5;
+}
+.read_more:hover {
+  color: #2b1b9a;
+}
+
+.read_more:hover::after {
+  opacity: 1;
+}
+
+.tetimonial {
+  margin-bottom: 65px;
+  position: relative;
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 22px 60px rgb(43 27 154 / 6%);
+  box-shadow: 10px 22px 60px rgb(43 27 154 / 6%);
+  background-clip: padding-box;
+  border: solid 4px transparent;
+  z-index: 111;
+}
+.tetimonial::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -4px;
+  border-radius: inherit;
+  background: linear-gradient(
+    to right,
+    #a3d7f4 0,
+    #a2cef4 80px,
+    #c4d4ff 255px,
+    #e2deff 100%
+  );
+}
+
+.testimonial_text{
+  padding: 40px;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #2b1b9a;
+}
+.tetimonial::after{
+  content: "";
+  display: block;
+  background-image: url("../../public/home/quote-tip-bordered.svg");
+  width: 125px;
+  height: 50px;
+  bottom: -50px;
+  margin-left: 0;
+  left: 17.5px;
+  position: absolute;
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+
+.auhtor{
+    padding-left: 55px;
+    margin-left: 20px;
+    position: relative;
+    color: #2b1b9a;;
+}
+.auhtor h5{
+  font-size: 24px;
+  line-height: 32px;    font-weight: 600;    font-family: Livvic,sans-serif;
+  margin-bottom: 0px;
+}
+.auhtor p{
+  font-size: 14px;
+    line-height: 20px;
+}
+.auhtor::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  content: "";
+  height: 29px;
+  width: 31px;
+  background-image: url("../../public/home/quote-mark.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top left; 
+}
+
+.header{
+  
+    margin-bottom: 16px;
+    color: #2b1b9a;
+    text-align: center;
+    
+}
+.header h5{
+  font-size: 16px;
+  font-weight: 600;
+    text-transform: uppercase;
+    font-family: Asap,sans-serif;
+}
+.header::before{
+  display: block;
+  content: "";
+  height: 29px;
+  background-image: url("../../public/home/quote-mark.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 16px;
+}
+
+.img_box{
+  margin-left: -77px;
+}
+@media (min-width: 200px) { 
+  .text_section{
+    order: 2;
+  }
+  .image_section{
+    order: 1;
+  }
+ }
+
+ @media (max-width: 767.98px) { 
+  .auhtor::before{
+    display: none
+  }
+  .auhtor {
+    margin: 0;
+    text-align: center;
+    padding: 0
+  }
+  .auhtor h5{
+   font-size: 20px
+  }
+  .tetimonial::after{
+    display: none;
+  }
+  .tetimonial::before{
+    display: none;
+  }
+  .wrapper{
+    padding: 0;
+  }
+  .testimonial_text{
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+  }
+  .tetimonial {
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 0;
+    box-shadow: none;
+    background-clip: padding-box;
+    border:none;
+    z-index: 111;
+    text-align: center;
+  }
+  .img_box{
+    margin: 0;
+  }
+.section_main{
+  padding-bottom: 0;
+  padding-top: 60px;
+}
+
+}
+
+
+
+
+@media (min-width: 768px) { 
+  .text_section{
+    order: 1;
+  }
+  .image_section{
+    order: 2;
+  }
+ }
+@media (min-width: 992px) { 
+  .text_section{
+    padding: 0px
+  }
+  
+  
+ }
+
+ @media (min-width: 1400px) { 
+  .text_section{
+    padding: 0 105px
+  }
+  }

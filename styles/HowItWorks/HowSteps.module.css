@@ -1,0 +1,133 @@
+
+.section{
+    position: relative;
+    background-color: #f8f6fa;
+    z-index: 1;
+}
+.section::before{
+   background-image: url("../../public/howItWork/how-steps.png");
+   /* content: "";
+   position: absolute;
+   background-size: 100% auto;
+    left: auto;
+    right: 50%;
+    margin-right: -100px;
+    background-origin: content-box;
+    width: 463.88571px;
+    -webkit-transform: translateX(29.76px);
+    transform: translateX(29.76px);
+    top: -69.44px;
+    padding-bottom: 69.44px;
+    height: 100%; */
+    /* z-index: -1; */
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: -1.5%;
+    left: -71%;
+    height: 100%;
+    width: 100%;
+    /* background-image: url(how-steps.png); */
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 85% auto;
+}
+
+.wrapper{
+    padding-top: 40px;
+    margin-top: -68px;
+}
+
+.steps{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    padding-top: 40px;
+}
+.step_content h2{
+    
+    font-family: Livvic,sans-serif;
+    font-weight: 600;
+    color: #2b1b9a;
+    font-size: 32px;
+    line-height: 32px;
+}
+.step_content h4{
+    font-family: Livvic,sans-serif;
+    font-weight: 600;
+    color: #2b1b9a;
+    margin-bottom: 16px;    
+    font-size: 20px;
+    line-height: 28px;
+}
+.step_content {
+    color: #2b1b9a;
+    font-family: Livvic,sans-serif;
+}
+.step_content p{
+  margin-bottom:1em
+}
+.step_img{
+    flex-basis: 50%;
+}
+.step_content{
+    flex-basis: 50%;
+}
+
+.list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.list li{
+    background-color: #e8f4fe;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 9px 16px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #5f5572;
+    font-weight: 700;
+}
+
+
+@media (min-width: 768px) { 
+    .step_content h2{
+        font-size: 48px;
+        line-height: 54px;       
+    }
+    .step_content h4{        
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+@media (min-width: 992px) { 
+    .steps{
+       flex-direction: row
+    }
+    .section::before{
+        background-image: url("../../public/howItWork/how-steps.png");
+        content: "";
+        position: absolute;
+        background-size: 100% auto;
+         left: auto;
+         right: 50%;
+         margin-right: -100px;
+         background-origin: content-box;
+         width: 463.88571px;
+         -webkit-transform: translateX(29.76px);
+         transform: translateX(29.76px);
+         top: -69.44px;
+         padding-bottom: 69.44px;
+         height: 100%;
+         z-index: -1;
+     }
+ }
+@media (min-width: 1400px) {
+    .steps{
+        max-width: 1000px;
+    }
+ }

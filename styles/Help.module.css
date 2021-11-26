@@ -1,0 +1,33 @@
+.form_container {
+  background-color: #f8f6fa;
+}
+
+.contact_input, .phnInput {
+  border: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: 0;
+  background-color: #edebf1;
+  color: #5f5572;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: Asap, sans-serif;
+  line-height: 26px;
+  padding: 14px 24px 16px;
+  width: 100%;
+}
+.contact_input:focus {
+  background-color: #E2DEFC;
+  box-shadow:none;
+  color: #2b1b9a;
+}
+
+.contact_label{
+    font-size: 13px;
+    line-height: 15px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
+    color: #2b1b9a;
+    cursor: pointer;
+}

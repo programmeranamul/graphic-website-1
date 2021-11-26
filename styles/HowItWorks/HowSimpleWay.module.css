@@ -1,0 +1,111 @@
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f8f6fa;
+  position: relative;
+}
+.main {
+}
+/* .section::after{
+    background-image: url("../../public/howItWork/how-header.png");
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    background-position: right;
+    background-size: 100%;
+    padding-left: 100px;
+    background-origin: content-box;
+    width: 463.88571px;
+ 
+    display: block;
+    background-repeat: no-repeat;
+    right: 0;
+  
+
+} */
+.section::after {
+  background-image: url("../../public/howItWork/how-header.png");
+  content: "";
+  /* z-index: -1; */
+  display: block;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: 150% bottom;
+  background-size: 85% auto;
+  height: 70vw;
+  width: 100%;
+}
+.left {
+  width: 100%;
+  color: #2b1b9a;
+  font-family: Livvic, sans-serif;
+}
+.left h1 {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+.sub_title_cont {
+  font-size: 20px;
+    line-height: 28px;
+}
+
+.steps {
+  position: relative;
+}
+.steps::before {
+  background-image: url("../../public/howItWork/how-steps.png");
+}
+
+@media (min-width: 768px) {
+  .left h1 {
+    font-size: 48px;
+    line-height: 54px;
+  }
+}
+
+@media (min-width: 992px) {
+  .section {
+    min-height: 476.59832px;
+  }
+  .section::after {
+    background-image: url("../../public/howItWork/how-header.png");
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    background-position: right;
+    background-size: 100%;
+    padding-left: 100px;
+    background-origin: content-box;
+    width: 463.88571px;
+    display: block;
+    background-repeat: no-repeat;
+    right: 0;
+  }
+  .left {
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .section {
+    min-height: 591.2605px;
+  }
+  .section::after {
+    width: 477.71429px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .section {
+    min-height: 701.51261px;
+  }
+  .section::after {
+    width: 703.85714px;
+  }
+}

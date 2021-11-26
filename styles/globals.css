@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600&family=Livvic:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Open+Sans:wght@400;500&family=Roboto:wght@400;500&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Google Font  */
+
+/* font-family: 'Asap', sans-serif;
+font-family: 'Livvic', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
+.font-asap {
+  font-family: "Asap", sans-serif;
+}
+.font-livvic {
+  font-family: "Livvic", sans-serif;
+}
+.font-sans {
+  font-family: "Open Sans", sans-serif;
+}
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+/* color and background color*/
+.main-color {
+  color: #2b1b9a;
+}
+.color-sky{
+  color: #67b6f4
+}
+.bg-main{
+ background-color: #2B1B9A;
+}
+.bg-deep-gray{
+  background-color: #F8F6FA;
+}
+.secondary-color{
+  color: #e2defc
+}
+
+/* font-side and font-weight */
+.fs-17{
+  font-size: 17px
+}
+.fs-24 {
+  font-size: 24px;
+}
+.fs-30{
+  font-size: 30px;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.fw-300 {
+  font-weight: 300;
+}
+.fw-700 {
+  font-weight: 700;
+}
+
+
+/* line height */
+.lh-32{
+  line-height: 32px;
+}
+
+
+/* Margin padding */
+.mt-80{
+  margin-top: 80px
+}
+
+
+.pb-80{
+  padding-bottom: 80px;
+}
+
+
+
+
+
+
+
+/* utils */
+.cursor-pointer{
+  cursor: pointer;
+}
+.position-relative{
+  position: "relative";
+}
+.title-3, .title-4{
+  font-family: Livvic,sans-serif;
+  font-weight: 600;
+  color: #2b1b9a;
+}
+.title-3{  
+  font-size: 32px;
+    line-height: 40px;
+}
+.title-4{
+  font-size: 24px;
+    line-height: 32px;
+}
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 333333;
+  right: 0
+}
+.new-quote{
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  box-shadow: 2px 4px 12px rgb(43 27 154 / 30%);
+    z-index: 199;
+    background-color: #9d91f5;
+    color: #fff;
+    width: auto;
+    border-radius: 22px;
+    padding: 18px 32px;
+    font-family: "Asap", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+}
+.new-quote:hover{
+  background-color: #fff;
+  color: #2B1B9A
+}
+.main_section{
+  margin-top: 80px;
+}
+
+/* width */
+.w-100{
+  width: 100%;
+}
+
+/* Button */
+.main-btn, .secondary-btn{
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-family: "Asap", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: .07em;
+  padding: 14px 30px;
+  border-radius: 8px;
+  box-shadow: 0 12px 30px rgb(43 27 154 / 8%);
+}
+
+.main-btn{  
+  background-color: #67b6f4;  
+  color: #fff !important;  
+  transition: all .3s linear;
+}
+.main-btn:hover{  
+  background-color: #9d91f5; 
+}
+.secondary-btn{  
+  color: #fff;
+  background-color: #9d91f5;
+}
+
+
+.main-content{
+  background-color: blueviolet;
+  width: 100%;
+  /* height: 100vh;   */
+  transition: all .4s ease;
+}
+.slide_out_content{
+  transform: translate3d(440px,0,0);
+}
+.layout_container{
+  overflow: hidden;
+}
+/* For Mobile device */
+/* transform: translate3d(80vw,0,0); */
+
+
+
+
+/* Teliphon number npm style */
+.PhoneInputCountry{
+  margin-right: 0px !important;
+      padding: 0 20px 0 15px !important;
+      border-radius: inherit !important;
+      background-color: rgba(0, 0, 0, 0.1) !important;
+}
+.PhoneInputInput, .PhoneInputCountry{
+  border: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: 0;
+  background-color: #edebf1;
+  color: #5f5572;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: Asap, sans-serif;
+  line-height: 26px;
+  /* padding: 14px 24px 16px; */
+  padding: 14px 0px 16px;
+}
+.PhoneInputInput{
+  padding-left: 17px
+}
+.PhoneInputInput:focus{
+  background-color: #E2DEFC;
+  box-shadow:none;
+  color: #2b1b9a;
+}
+
+
+
+/* Next Image Overwirte */
+.next-img-container > div{
+  position: unset !important;
+}
+
+.next-image{
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+
+/* Service in home page */
+.bg_red{
+  background-color: #FA585A;
+}
+.bg_blue{
+  background-color: #67B6F4;
+}
+.bg_beguni{
+background-color: #9D91F5;
+}
+.bg_yellow{
+  background-color: #FFCD1E;
+}
+
+
+@media (max-width: 767.98px) { 
+  .new-quote{
+    bottom: 12px;
+    right: 12px;
+    padding: 12px 15px;
+    border-radius: 22px;
+    letter-spacing: .07em;
+  }
+}
