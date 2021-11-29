@@ -2,6 +2,8 @@ import HowSimpleWay from "../../components/HowItWorks/HowSimpleWay/HowSimpleWay"
 import { useContext, useEffect } from "react";
 import { MenuContext } from "../_app";
 import HowSteps from './../../components/HowItWorks/HowSteps/HowSteps';
+import PixelPerfectGuarantee from './../../components/HowItWorks/PixelPerfectGuarantee/PixelPerfectGuarantee';
+import HowMostPopular from './../../components/HowItWorks/HowMostPopular/HowMostPopular';
 
 
 function Index() {
@@ -15,6 +17,8 @@ function Index() {
     <>
       <HowSimpleWay />
       <HowSteps />
+      <PixelPerfectGuarantee />
+      <HowMostPopular />
     </>
   );
 }

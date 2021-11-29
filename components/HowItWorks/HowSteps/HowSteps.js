@@ -48,6 +48,12 @@ const datas = [
     text2:
       "We’ll carefully edit your images by hand. Each image will then be double-checked for perfection before we send you the finished files. ",
   },
+  {
+    imgSrc: "/howItWork/how-step-5_1300x.png",
+    count: 5,
+    title:"Download your professionally edited images.",
+    text1:"Once your photos are ready, we’ll email you a link to download the files, all ready to go. "
+  }
 ];
 
 function HowSteps() {
@@ -98,36 +104,7 @@ function HowSteps() {
               </div>
             </div>
           ))}
-          {/* <div className={style.steps}>
-            <div className={style.step_img}>
-              <div className="next-img-container">
-                <Image
-                  src="/howItWork/how-step-1_1300x.png"
-                  alt="Test"
-                  className="next-image"
-                  layout="fill"
-                />
-              </div>
-            </div>
-            <div className={style.step_content}>
-              <h2>Step 1</h2>
-              <h4>Kick things off by requesting a quote.</h4>
-              <p>
-                Select your service, turnaround time, and image complexity.
-                We’ll give you an estimate right away, and then you’ll get a
-                customized quote within 45 minutes.  <br /> <br />
-                Our default turnaround time for image edits is 24 hours, but you
-                can opt for faster turnaround if needed. Not in a rush? Choose a
-                longer turnaround time and get a discount.{" "}
-              </p>
-              <div className={style.action}>
-                  <Link href="/">
-                  <a className="main-btn d-inline-block">Get Started <CgArrowRight /></a>
-                  </Link>
-              </div>
-
-            </div>
-          </div> */}
+        
         </div>
       </div>
     </section>

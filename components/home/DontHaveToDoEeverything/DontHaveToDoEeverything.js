@@ -64,7 +64,7 @@ function DontHaveToDoEeverything() {
       <div className="container text-center">
         <div className={style.action}>
           <Link href="/">
-            <a className="main-btn d-block d-sm-inline-block">
+            <a className="main-btn">
               Get Started <CgArrowRight className="fs-24" />
             </a>
           </Link>
